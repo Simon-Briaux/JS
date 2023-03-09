@@ -1,25 +1,36 @@
+var MaDiv = document.getElementById("MaDivNum1");
+
+MaDiv.addEventListener("click", changement);
+
+function changement(evenement) {
+    evenement.target.innerHTML = "On m'a cliqué dessus !";
+}
+
 var compteur = 0;
 var compteur2 = 0;
 
-var Div = document.getElementById ("Methode2");
-Div.addEventListener("click", UneProcedureQuiChangeLeText);
+var MaDiv2 = document.getElementById("Methode1");
+MaDiv2.addEventListener("click", changementEcriture);
 
-Div = document.getElementById ("Methode3");
-Div.addEventListener("mouseover", UneProcedureQuiSurvole);
+var MaDiv2 = document.getElementById("Methode2");
+MaDiv2.addEventListener("mouseover", survole);
 
-Div = document.getElementById ("Methode4");
-Div.addEventListener("keydown", UneProcedureQuiEcrit);
+var MaDiv2 = document.getElementById("Methode3");
+MaDiv2.addEventListener("keydown", ecriture);
 
-function UneProcedureQuiEcrit(evenement){
-    evenement.target.innerHTML = "On a appuyé sur :"+evenement.key
+
+
+function ecriture(evenement) {
+    evenement.target.innerHTML = "On a cliqué sur : "+evenement.key+" !";
 }
 
-function UneProcedureQuiChangeLeText(evenement){
+function changementEcriture(evenement) {
     compteur++;
-    evenement.target.innerHTML = "On m'as cliqué dessus "+compteur+" fois";
+    evenement.target.innerHTML = "On m'a cliqué dessus "+compteur+" fois !";
 }
 
-function UneProcedureQuiSurvole(evenement){
+function survole(evenement) {
     compteur2++;
-    evenement.target.innerHTML = "On m'as survollé"+compteur2+"fois";
+    evenement.target.innerHTML = "On m'a survolé "+compteur2+" fois !";
 }
+

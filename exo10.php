@@ -4,14 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Exo10</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <title>Document</title>
 </head>
 <body>
-    <div id="Methode2" class = "divD">Clic moi dessus</div>
-    <div id="Methode3" class = "divD">Survole moi</div>
-    <div id="Methode4" class = "divD" tabindex="0">écrit avec ton clavier</div>
-
+    <div class="divA">
+        <div id="MaDivNum1">
+        </div>
+        <div id="Methode1" class="Div">
+            Clique moi dessus !
+        </div>
+        <div id="Methode2" class="Div">
+            Survole moi !
+        </div>
+        <div id="Methode3" class="Div" tabindex="0">
+            Appuie au clavier
+        </div>
+    </div>
+    <script type="text/javascript" src="exo10.js"></script>
 </body>
-<script src='exo10.js'></script>
-</html>
+</html>  
